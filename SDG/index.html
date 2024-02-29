@@ -50,142 +50,202 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   
   <!-- Photo grid -->
   <div class="w3-row w3-grayscale-min">
-    
-    <div class="w3-quarter">
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG1 - Description">
-        <div class="content" id="sdg1">
-          <h1>SDG 1</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG2 - Desc">
-        <div class="content" id="sdg5">
-          <h1>SDG 5</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG3 - Desc">        
-        <div class="content" id="sdg9">
-          <h1>SDG 9</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG4 - Desc">
-        <div class="content" id="sdg13">
-          <h1>SDG 13</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>        
-      </div>
+
+    <div class="photodiv">
+
+      <div class="container" id="con1">
+        <input type="radio" name="slide" id="sdg1">
+        <label for="sdg1" class="card">
+            <div class="row">
+                <div class="icon">1</div>
+                <div class="description">
+                    <h4>No Poverty</h4>
+                    <p>Winter has so much to offer -
+                     creative activities</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="sdg2" >
+        <label for="sdg2" class="card">
+            <div class="row">
+                <div class="icon">2</div>
+                <div class="description">
+                    <h4>Zero Hunger</h4>
+                    <p>Gets better every day -
+                     stay tuned</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="sdg3" >
+        <label for="sdg3" class="card">
+            <div class="row">
+                <div class="icon">3</div>
+                <div class="description">
+                    <h4>Good Health and Well-being</h4>
+                    <p>Help people all over the world</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="sdg4" >
+        <label for="sdg4" class="card">
+            <div class="row">
+                <div class="icon" id="sdg4Icon">4</div>
+                <div class="description">
+                    <h4>Quality Education</h4>
+                    <p>Space engineering becomes
+                     more and more advanced</p>
+                </div>
+            </div>
+        </label>
+     </div>
+    <!-- second row -->
+    <div class="container" id="con2">
+      <input type="radio" name="slide" id="sdg5">
+      <label for="sdg5" class="card">
+          <div class="row">
+              <div class="icon">5</div>
+              <div class="description">
+                  <h4>GEnder Equality</h4>
+                  <p>Winter has so much to offer -
+                   creative activities</p>
+              </div>
+          </div>
+      </label>
+      <input type="radio" name="slide" id="sdg6" >
+      <label for="sdg6" class="card">
+          <div class="row">
+              <div class="icon">6</div>
+              <div class="description">
+                  <h4>Clean Water and Sanitation</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum atque, odio laboriosam sequi obcaecati veritatis aperiam consectetur quos facere excepturi nesciunt animi totam provident quibusdam hic, ea explicabo temporibus.</p>
+              </div>
+          </div>
+      </label>
+      <input type="radio" name="slide" id="sdg7" >
+      <label for="sdg7" class="card">
+          <div class="row">
+              <div class="icon">7</div>
+              <div class="description">
+                  <h4>Affordable and Clean Energy</h4>
+                  <p>Help people all over the world</p>
+              </div>
+          </div>
+      </label>
+      <input type="radio" name="slide" id="sdg8" >
+      <label for="sdg8" class="card">
+          <div class="row">
+              <div class="icon">8</div>
+              <div class="description">
+                  <h4>Decent work and Economic Growth</h4>
+                  <p>Space engineering becomes
+                   more and more advanced</p>
+              </div>
+          </div>
+      </label>
    </div>
-    
-   <div class="w3-quarter">
-    <div class="image">
-      <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG5 - Desc">
-      <div class="content" id="sdg2">
-        <h1>SDG 2</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-      </div>
-    </div>
-    <div class="image">
-      <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG6 - Desc">
-      <div class="content" id="sdg6">
-        <h1>SDG 6</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-      </div>
-    </div>
-    <div class="image">
-      <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG7 - Desc">        
-      <div class="content" id="sdg10">
-        <h1>SDG 10</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-      </div>
-    </div>
-    <div class="image">
-      <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG8 - Desc">
-      <div class="content" id="sdg14">
-        <h1>SDG 14</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-      </div>        
-    </div>
-  </div>
-    
-    <div class="w3-quarter">
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="SDG9">
-        <div class="content" id="sdg3">
-          <h1>SDG 3</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
+   <!-- third row -->
+   <div class="container" id="con3">
+        <input type="radio" name="slide" id="sdg9">
+        <label for="sdg9" class="card">
+          <div class="row">
+              <div class="icon">9</div>
+              <div class="description">
+                  <h4>Industry, Innovation and Infrastracture</h4>
+                  <p>Winter has so much to offer -
+                  creative activities</p>
+              </div>
+          </div>
+      </label>
+      <input type="radio" name="slide" id="sdg10" >
+      <label for="sdg10" class="card">
+          <div class="row">
+              <div class="icon">10</div>
+              <div class="description">
+                  <h4>reduced Inequalities</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum atque, odio laboriosam sequi obcaecati veritatis aperiam consectetur quos facere excepturi nesciunt animi totam provident quibusdam hic, ea explicabo temporibus.</p>
+              </div>
+          </div>
+      </label>
+      <input type="radio" name="slide" id="sdg11" >
+      <label for="sdg11" class="card">
+          <div class="row">
+              <div class="icon">11</div>
+              <div class="description">
+                  <h4>Sustainable cities and Communities</h4>
+                  <p>Help people all over the world</p>
+              </div>
+          </div>
+      </label>
+      <input type="radio" name="slide" id="sdg12" >
+      <label for="sdg12" class="card">
+          <div class="row">
+              <div class="icon">12</div>
+              <div class="description">
+                  <h4>Responsible Consumption and Production</h4>
+                  <p>Space engineering becomes
+                  more and more advanced</p>
+              </div>
+          </div>
+      </label>
+   </div>
+   <!--fourth row-->
+   <div class="container" id="con4">
+    <input type="radio" name="slide" id="sdg13">
+    <label for="sdg13" class="card">
+        <div class="row">
+            <div class="icon">13</div>
+            <div class="description">
+                <h4>Climate Action</h4>
+                <p>Winter has so much to offer -
+                 creative activities</p>
+            </div>
         </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="10">
-        <div class="content" id="sdg7">
-          <h1>SDG 7</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
+    </label>
+    <input type="radio" name="slide" id="sdg14" >
+    <label for="sdg14" class="card">
+        <div class="row">
+            <div class="icon">14</div>
+            <div class="description">
+                <h4>Life Below Water</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum atque, odio laboriosam sequi obcaecati veritatis aperiam consectetur quos facere excepturi nesciunt animi totam provident quibusdam hic, ea explicabo temporibus.</p>
+            </div>
         </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="11">        
-        <div class="content" id="sdg11">
-          <h1>SDG 11</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
+    </label>
+    <input type="radio" name="slide" id="sdg15" >
+    <label for="sdg15" class="card">
+        <div class="row">
+            <div class="icon">15</div>
+            <div class="description">
+                <h4>Life on Land</h4>
+                <p>Help people all over the world</p>
+            </div>
         </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="12">
-        <div class="content" id="sdg15">
-          <h1>SDG 15</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>        
-      </div>
-    </div>
+    </label>
+    <input type="radio" name="slide" id="sdg16" >
+    <label for="sdg16" class="card">
+        <div class="row">
+            <div class="icon">16</div>
+            <div class="description">
+                <h4>Peace, Justice and Strong Institutions</h4>
+                <p>Space engineering becomes
+                 more and more advanced</p>
+            </div>
+        </div>
+    </label>
+    <input type="radio" name="slide" id="sdg17" >
+    <label for="sdg17" class="card">
+        <div class="row">
+            <div class="icon">17</div>
+            <div class="description">
+                <h4>Partnerships for the Goals</h4>
+                <p>Space engineering becomes
+                 more and more advanced</p>
+            </div>
+        </div>
+    </label>
+ </div>
+</div>
 
-    <div class="w3-quarter">
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="13">
-        <div class="content" id="sdg4">
-          <h1>SDG 4</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="14">
-        <div class="content" id="sdg8">
-          <h1>SDG 8</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-      <div class="image" id="sdg12">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="15">        
-        <div class="content" id="sdg12">
-          <h1>SDG 12</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-      <div class="image" id="sdg16">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="16">
-        <div class="content">
-          <h1>SDG 16</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>        
-      </div>
-    </div>
-
-    <div class="w3-quarter">
-      <div class="image">
-        <img src="images/test.jpg" style="width:100%" onclick="onClick(this)" alt="17">
-        <div class="content" id="sdg17">
-          <h1>SDG 17</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam obcaecati quisquam voluptatibus rerum consectetur quam incidunt voluptatum labore tenetur. Rerum modi corporis assumenda perferendis dolore tempora, soluta natus expedita reprehenderit!</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   
   <!-- Modal for full size images on click-->
