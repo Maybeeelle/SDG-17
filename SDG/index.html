@@ -53,15 +53,26 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
     <div class="photodiv">
 
+      
+
       <div class="container" id="con1">
+
+        
         <input type="radio" name="slide" id="sdg1">
-        <label for="sdg1" class="card">
-            <div class="row">
+        <label for="sdg1" class="card"  onmouseover="showHiddenElement(1)" onmouseout="hideHiddenElement(1)">
+            <div class="row" >
                 <div class="icon">1</div>
                 <div class="description">
                     <h4>No Poverty</h4>
-                    <p>Winter has so much to offer -
-                     creative activities</p>
+                    <p>The COVID-19 pandemic has set back 
+                        our progress in fighting poverty, leaving 575 
+                        million people in extreme poverty by 2030. More 
+                        than 4 billion lack sufficient social protection, 
+                        and only a third of countries are expected to cut
+                         poverty rates by then. We urgently need to invest
+                          in creating jobs and improving social services, 
+                          including reallocating public resources to where 
+                          they're most needed.</p>
                 </div>
             </div>
         </label>
@@ -71,8 +82,16 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
                 <div class="icon">2</div>
                 <div class="description">
                     <h4>Zero Hunger</h4>
-                    <p>Gets better every day -
-                     stay tuned</p>
+                    <p>There's a growing problem of hunger globally, 
+                        worsened by factors like the COVID-19 pandemic, 
+                        conflict, and climate change. Despite efforts, 
+                        around 670 million people are projected to face 
+                        hunger by 2030, similar to 2015 levels. We need 
+                        urgent action to improve food systems, ensure food 
+                        security, to reach zero hunger by 2030. Challenges 
+                        include reducing malnutrition in children and addressing 
+                        issues like fluctuating food prices, particularly in 
+                        sub-Saharan Africa and least developed countries.</p>
                 </div>
             </div>
         </label>
@@ -82,21 +101,25 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
                 <div class="icon">3</div>
                 <div class="description">
                     <h4>Good Health and Well-being</h4>
-                    <p>Help people all over the world</p>
+                    <p>Health inequalities are rising due to challenges facing Sustainable Development Goal 3, worsened by the pandemic. Urgent action is needed to tackle issues like unvaccinated children, slow progress in reducing maternal and setbacks in fighting diseases like HIV, TB, and malaria. Efforts to strengthen health systems, address health worker shortages, and improve access to family planning and childhood vaccinations are crucial for achieving universal health.</p>
                 </div>
             </div>
         </label>
         <input type="radio" name="slide" id="sdg4" >
         <label for="sdg4" class="card">
-            <div class="row">
+            <div class="row" id="sd4">
                 <div class="icon" id="sdg4Icon">4</div>
                 <div class="description">
                     <h4>Quality Education</h4>
-                    <p>Space engineering becomes
-                     more and more advanced</p>
+                    <p>The COVID-19 pandemic has worsened existing challenges in achieving education targets, particularly SDG4. Without additional measures, only a fraction of countries will meet the goal by 2030, leaving millions of children without quality education. Progress has slowed, learning levels stagnated, and pre-primary education remains limited. Reimagining education systems, prioritizing funding, and ensuring access for all are crucial to achieve SDG4 effectively.</p>
                 </div>
             </div>
         </label>
+        <!-- <div class="hidden-element" id="hidden-element-1">
+            <p>wew</p>
+          </div> -->
+          
+          <div class="containerQ"></div>
      </div>
     <!-- second row -->
     <div class="container" id="con2">
@@ -105,9 +128,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
           <div class="row">
               <div class="icon">5</div>
               <div class="description">
-                  <h4>GEnder Equality</h4>
-                  <p>Winter has so much to offer -
-                   creative activities</p>
+                  <h4>Gender Equality</h4>
+                  <p>Achieving gender equality by 2030 remains a distant goal, with none of the 18 indicators on track to meet targets. Progress in closing gender gaps in legal protection and leadership representation is slow, and the COVID-19 pandemic has worsened existing inequalities. Comprehensive policy reforms and strong political leadership are essential to advance gender equality under Sustainable Development Goal 5 (SDG5).</p>
               </div>
           </div>
       </label>
@@ -117,7 +139,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
               <div class="icon">6</div>
               <div class="description">
                   <h4>Clean Water and Sanitation</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum atque, odio laboriosam sequi obcaecati veritatis aperiam consectetur quos facere excepturi nesciunt animi totam provident quibusdam hic, ea explicabo temporibus.</p>
+                  <p>Despite progress, billions lack access to safe water, sanitation, and hygiene, worsened by conflicts and climate change. Achieving universal coverage by 2030 demands significant acceleration, particularly for drinking water, sanitation, and hygiene. Challenges include pollution, wastewater treatment, and water use efficiency, compounded by inadequate sustainable water management frameworks and declining ODA disbursements. Addressing these requires increased investment, better coordination, and prioritizing climate change adaptation for SDG6.</p>
               </div>
           </div>
       </label>
@@ -127,7 +149,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
               <div class="icon">7</div>
               <div class="description">
                   <h4>Affordable and Clean Energy</h4>
-                  <p>Help people all over the world</p>
+                  <p>Despite global improvements, 675 million lack electricity and 2.3 billion use unsafe cooking fuels. Energy price volatility, influenced by the war in Ukraine, prompts mixed responses. Without action, millions will still lack energy access by 2030. Accelerating electrification and investing in renewables are crucial, despite declining international support for clean energy in developing countries, emphasizing the need for global efforts towards equitable energy access and sustainable development.</p>
               </div>
           </div>
       </label>
@@ -137,8 +159,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
               <div class="icon">8</div>
               <div class="description">
                   <h4>Decent work and Economic Growth</h4>
-                  <p>Space engineering becomes
-                   more and more advanced</p>
+                  <p>Challenges like COVID-19 fallout, trade tensions, and the Ukraine conflict are slowing progress on SDG8. Despite some growth, informal employment and low productivity are widespread. Unemployment remains a concern, especially for youth, and child labor is on the rise. While tourism is rebounding economically, access to finance and digital solutions for sustainable development goals still pose challenges. To tackle these, we need comprehensive financial system reforms to manage debts and ensure fair pay and decent work for everyone.</p>
               </div>
           </div>
       </label>
@@ -151,8 +172,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
               <div class="icon">9</div>
               <div class="description">
                   <h4>Industry, Innovation and Infrastracture</h4>
-                  <p>Winter has so much to offer -
-                  creative activities</p>
+                  <p>The manufacturing industry's COVID-19 recovery varies: high-income regions thrive, but least developed countries lag. Innovation and tech transfer are crucial for Goal 9 by 2030. Supporting LDCs, investing in advanced tech, and reducing emissions are vital. Despite rebounding jobs, the share of manufacturing employment declines. Also, CO2 emissions hit a new high, and mobile broadband access remains challenging, especially in Sub-Saharan Africa and LDCs.</p>
               </div>
           </div>
       </label>
@@ -161,8 +181,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
           <div class="row">
               <div class="icon">10</div>
               <div class="description">
-                  <h4>reduced Inequalities</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum atque, odio laboriosam sequi obcaecati veritatis aperiam consectetur quos facere excepturi nesciunt animi totam provident quibusdam hic, ea explicabo temporibus.</p>
+                  <h4>Reduced Inequalities</h4>
+                  <p>Before COVID-19, the bottom 40% saw faster income growth, reducing inequality. But the pandemic and uneven recoveries now threaten to reverse this progress and worsen global inequality. Record numbers are fleeing conflicts and poverty, with one in 251 people worldwide being a refugee by mid-2022, the highest ever. Achieving SDG 10 means addressing wage disparities and resource access within and between countries. Challenges persist, like high poverty rates and declining worker earnings. Additionally, the global cost of sending remittances is a concern.</p>
               </div>
           </div>
       </label>
@@ -172,7 +192,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
               <div class="icon">11</div>
               <div class="description">
                   <h4>Sustainable cities and Communities</h4>
-                  <p>Help people all over the world</p>
+                  <p>The COVID-19 pandemic has shifted migration patterns, impacting cities and hindering progress towards sustainable urban areas. More people are living in slums, worsening housing issues, especially in developing countries. Public transportation is lacking for many urban residents, and waste management remains a concern, contributing to pollution. Achieving SDG 11 requires better urban planning, improved public transport, enhanced waste management, and increasing disaster risk reduction strategies in local governments.</p>
               </div>
           </div>
       </label>
@@ -182,12 +202,15 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
               <div class="icon">12</div>
               <div class="description">
                   <h4>Responsible Consumption and Production</h4>
-                  <p>Space engineering becomes
-                  more and more advanced</p>
+                  <p>The world struggles to reduce food waste by 2030, worsened by COVID-19 disruptions. We need responsible consumption and production integrated into recovery efforts and to decouple growth from resource use. Corporate sustainability reporting has improved, but there's room to do more for the SDGs. Regional disparities exist in sustainable practices, and efforts to reduce food losses are stagnant. Rising fossil fuel subsidies challenge sustainability. Achieving SDG12 requires robust policies promoting sustainability.</p>
               </div>
           </div>
       </label>
    </div>
+
+
+
+ 
    <!--fourth row-->
    <div class="container" id="con4">
     <input type="radio" name="slide" id="sdg13">
@@ -196,8 +219,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
             <div class="icon">13</div>
             <div class="description">
                 <h4>Climate Action</h4>
-                <p>Winter has so much to offer -
-                 creative activities</p>
+                <p>The world faces an urgent climate crisis, requiring transformative actions within this decade to reduce greenhouse gas emissions and meet the 1.5°C target. Without action, billions of lives are at risk from heatwaves, droughts, floods, and other disasters. Emissions must nearly halve by 2030 to effectively combat climate change. Despite some progress, global temperatures have already exceeded 1.1°C, and emissions continue to rise. Climate education is lacking in many national curriculum frameworks, highlighting the need for comprehensive action and education.</p>
             </div>
         </div>
     </label>
@@ -315,6 +337,14 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+function showHiddenElement(index) {
+    document.getElementById('hidden-element-' + index).style.maxHeight = '100px';
+}
+
+function hideHiddenElement(index) {
+    document.getElementById('hidden-element-' + index).style.maxHeight = '0';
 }
 
 </script>

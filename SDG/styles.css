@@ -75,8 +75,6 @@
 }
 
  
-
-
 .container {
     height: 450px;
     display: flex;
@@ -149,13 +147,25 @@
     transition: all .3s ease;
 }
 
+#sdg4{
+    background-image: url("images/test.jpg");
+}
+.description{
+    /* padding-bottom: 100px; */
+    align-items: baseline;
+}
 .description p {
-    color: #b0b0ba;
-    padding-top: 5px;
+    color: white;
+    margin: 5px;
+    padding-right: 15px;
+    font-size: 15px;
+    text-align: justify;
 }
 
 .description h4 {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 input {
@@ -173,72 +183,432 @@ input:hover + label .description {
 }
 
 input:hover + label #sdg4Icon {
+
    background: red;
 }
 
-input:hover + label[for="sdg4"]{
-    background: rgba(127, 8, 8, 0.6);
-    opacity: 1;
-}
+/* input:hover + label[for="sdg4"]{
+    background-image: url('images/test.jpg');
+} */
 
 input:hover{
     opacity: 0;
 }
 
+.hidden-element{
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* Other styles... */
+    
+}
 
-
+.icon{
+    position: relative;
+    z-index: 99;
+}
 
 .card[for="sdg1"] {
-    background-image: url('images/test.jpg');
+    position: relative;
+    background-image: url('images/sdgs/1.png');
+    overflow: hidden;
 }
+
+.card[for="sdg1"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eb1c2d;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg1"]:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
+
+
+
 .card[for="sdg2"] {
-    background-image: url('images/test.jpg');
+    position: relative;
+    background-image: url('images/sdgs/4.png');
+    overflow: hidden;
 }
+
+.card[for="sdg2"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D3A029;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg2"]:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
 .card[for="sdg3"] {
-    background-image: url('images/test.jpg');
+    position: relative;
+    background-image: url('images/sdgs/5.png');
+    overflow: hidden;
 }
+
+.card[for="sdg3"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #279B48;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg3"]:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
 .card[for="sdg4"] {
-    background-image: url('images/test.jpg');
+    position: relative;
+    background-image: url('images/sdgs/6.png');
+    overflow: hidden;
+}
+
+.card[for="sdg4"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #C31F33;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg4"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 
 .card[for="sdg5"] {
-    background-image: url('images/test.jpg');
+    position: relative;
+    background-image: url('images/sdgs/7.png');
+    overflow: hidden;
 }
+
+.card[for="sdg5"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EF402B;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg5"]:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
 .card[for="sdg6"] {
-    background-image: url('images/test.jpg');
+    position: relative;
+    background-image: url('images/sdgs/6.png');
+    overflow: hidden;
+}
+
+.card[for="sdg6"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00AED9;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg6"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg7"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg7"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FDB713;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg7"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg8"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg8"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8F1838;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg8"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 
 .card[for="sdg9"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg9"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F36D25;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg9"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg10"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg10"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E11484;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg10"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg11"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
 }
+
+.card[for="sdg11"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F99D26;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg11"]:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
 .card[for="sdg12"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
 }
+
+.card[for="sdg12"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #CF8D2A;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg12"]:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
 .card[for="sdg13"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg13"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #48773E;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg13"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg14"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg14"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #007DBC;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg14"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg15"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg15"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5DBB46;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg15"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 .card[for="sdg16"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg16"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #02558B;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg16"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
 
 .card[for="sdg17"] {
+    position: relative;
     background-image: url('images/test.jpg');
+    overflow: hidden;
+}
+
+.card[for="sdg17"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #183668;
+    background-size: cover;
+    opacity: 1; /* Start with fully opaque */
+    transition: opacity 0.9s;
+    pointer-events: none;
+}
+
+.card[for="sdg17"]:hover::before {
+    opacity: 0; /* Fade out on hover */
 }
