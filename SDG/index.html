@@ -1,354 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD: SDG 17</title>
+    <!-------------- Local Stylesheet Link -------------->
+    <link rel="stylesheet" href="style.css">
+    <!-------------Icon ------------------>
+    <link rel="icon" href="Images/Icon.jpg" type="image/x-icon">
+    <!-------------- Font Awesome Link -------------->
+    <script src="https://kit.fontawesome.com/de270889e1.js" crossorigin="anonymous"></script>
 
 
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
-.first-row img:hover{opacity: 0.6; transition: 0.3s}
-</style>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- AOS Link -------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body class="w3-light-grey">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
-  <a href="#sdg" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">What's SDG?</a>  
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">The 17 Goals</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Make A Change</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">17 SDGs</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
-
- 
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<body>
 
 
-  <!-- ABOUT SDG-->
+    <!-------------- Navbar -------------->
+    <header>
+        <nav id="navbar" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1800">
+            <h1 class="navbar"><span>CODE</span>BLOODED</h1>
+        </nav>
+    </header>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
-  <div  style="min-height: 90vh;"   id="sdg"> 
-    <img src="images/E_SDG_logo_UN_emblem_horizontal_trans_PRINT.png" alt="SDGLogo" id="sdgLogo">
-  </div>
-
-  
-  <!-- Photo grid -->
-  <div class="w3-row w3-grayscale-min">
-
-    <div class="photodiv">
-
-      
-
-      <div class="container" id="con1">
-
-        
-        <input type="radio" name="slide" id="sdg1">
-        <label for="sdg1" class="card"  onmouseover="showHiddenElement(1)" onmouseout="hideHiddenElement(1)">
-            <div class="row" >
-                <div class="icon">1</div>
-                <div class="description">
-                    <h4>No Poverty</h4>
-                    <p>The COVID-19 pandemic has set back 
-                        our progress in fighting poverty, leaving 575 
-                        million people in extreme poverty by 2030. More 
-                        than 4 billion lack sufficient social protection, 
-                        and only a third of countries are expected to cut
-                         poverty rates by then. We urgently need to invest
-                          in creating jobs and improving social services, 
-                          including reallocating public resources to where 
-                          they're most needed.</p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="sdg2" >
-        <label for="sdg2" class="card">
-            <div class="row">
-                <div class="icon">2</div>
-                <div class="description">
-                    <h4>Zero Hunger</h4>
-                    <p>There's a growing problem of hunger globally, 
-                        worsened by factors like the COVID-19 pandemic, 
-                        conflict, and climate change. Despite efforts, 
-                        around 670 million people are projected to face 
-                        hunger by 2030, similar to 2015 levels. We need 
-                        urgent action to improve food systems, ensure food 
-                        security, to reach zero hunger by 2030. Challenges 
-                        include reducing malnutrition in children and addressing 
-                        issues like fluctuating food prices, particularly in 
-                        sub-Saharan Africa and least developed countries.</p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="sdg3" >
-        <label for="sdg3" class="card">
-            <div class="row">
-                <div class="icon">3</div>
-                <div class="description">
-                    <h4>Good Health and Well-being</h4>
-                    <p>Health inequalities are rising due to challenges facing Sustainable Development Goal 3, worsened by the pandemic. Urgent action is needed to tackle issues like unvaccinated children, slow progress in reducing maternal and setbacks in fighting diseases like HIV, TB, and malaria. Efforts to strengthen health systems, address health worker shortages, and improve access to family planning and childhood vaccinations are crucial for achieving universal health.</p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="sdg4" >
-        <label for="sdg4" class="card">
-            <div class="row" id="sd4">
-                <div class="icon" id="sdg4Icon">4</div>
-                <div class="description">
-                    <h4>Quality Education</h4>
-                    <p>The COVID-19 pandemic has worsened existing challenges in achieving education targets, particularly SDG4. Without additional measures, only a fraction of countries will meet the goal by 2030, leaving millions of children without quality education. Progress has slowed, learning levels stagnated, and pre-primary education remains limited. Reimagining education systems, prioritizing funding, and ensuring access for all are crucial to achieve SDG4 effectively.</p>
-                </div>
-            </div>
-        </label>
-        <!-- <div class="hidden-element" id="hidden-element-1">
-            <p>wew</p>
-          </div> -->
-          
-          <div class="containerQ"></div>
-     </div>
-    <!-- second row -->
-    <div class="container" id="con2">
-      <input type="radio" name="slide" id="sdg5">
-      <label for="sdg5" class="card">
-          <div class="row">
-              <div class="icon">5</div>
-              <div class="description">
-                  <h4>Gender Equality</h4>
-                  <p>Achieving gender equality by 2030 remains a distant goal, with none of the 18 indicators on track to meet targets. Progress in closing gender gaps in legal protection and leadership representation is slow, and the COVID-19 pandemic has worsened existing inequalities. Comprehensive policy reforms and strong political leadership are essential to advance gender equality under Sustainable Development Goal 5 (SDG5).</p>
-              </div>
-          </div>
-      </label>
-      <input type="radio" name="slide" id="sdg6" >
-      <label for="sdg6" class="card">
-          <div class="row">
-              <div class="icon">6</div>
-              <div class="description">
-                  <h4>Clean Water and Sanitation</h4>
-                  <p>Despite progress, billions lack access to safe water, sanitation, and hygiene, worsened by conflicts and climate change. Achieving universal coverage by 2030 demands significant acceleration, particularly for drinking water, sanitation, and hygiene. Challenges include pollution, wastewater treatment, and water use efficiency, compounded by inadequate sustainable water management frameworks and declining ODA disbursements. Addressing these requires increased investment, better coordination, and prioritizing climate change adaptation for SDG6.</p>
-              </div>
-          </div>
-      </label>
-      <input type="radio" name="slide" id="sdg7" >
-      <label for="sdg7" class="card">
-          <div class="row">
-              <div class="icon">7</div>
-              <div class="description">
-                  <h4>Affordable and Clean Energy</h4>
-                  <p>Despite global improvements, 675 million lack electricity and 2.3 billion use unsafe cooking fuels. Energy price volatility, influenced by the war in Ukraine, prompts mixed responses. Without action, millions will still lack energy access by 2030. Accelerating electrification and investing in renewables are crucial, despite declining international support for clean energy in developing countries, emphasizing the need for global efforts towards equitable energy access and sustainable development.</p>
-              </div>
-          </div>
-      </label>
-      <input type="radio" name="slide" id="sdg8" >
-      <label for="sdg8" class="card">
-          <div class="row">
-              <div class="icon">8</div>
-              <div class="description">
-                  <h4>Decent work and Economic Growth</h4>
-                  <p>Challenges like COVID-19 fallout, trade tensions, and the Ukraine conflict are slowing progress on SDG8. Despite some growth, informal employment and low productivity are widespread. Unemployment remains a concern, especially for youth, and child labor is on the rise. While tourism is rebounding economically, access to finance and digital solutions for sustainable development goals still pose challenges. To tackle these, we need comprehensive financial system reforms to manage debts and ensure fair pay and decent work for everyone.</p>
-              </div>
-          </div>
-      </label>
-   </div>
-   <!-- third row -->
-   <div class="container" id="con3">
-        <input type="radio" name="slide" id="sdg9">
-        <label for="sdg9" class="card">
-          <div class="row">
-              <div class="icon">9</div>
-              <div class="description">
-                  <h4>Industry, Innovation and Infrastracture</h4>
-                  <p>The manufacturing industry's COVID-19 recovery varies: high-income regions thrive, but least developed countries lag. Innovation and tech transfer are crucial for Goal 9 by 2030. Supporting LDCs, investing in advanced tech, and reducing emissions are vital. Despite rebounding jobs, the share of manufacturing employment declines. Also, CO2 emissions hit a new high, and mobile broadband access remains challenging, especially in Sub-Saharan Africa and LDCs.</p>
-              </div>
-          </div>
-      </label>
-      <input type="radio" name="slide" id="sdg10" >
-      <label for="sdg10" class="card">
-          <div class="row">
-              <div class="icon">10</div>
-              <div class="description">
-                  <h4>Reduced Inequalities</h4>
-                  <p>Before COVID-19, the bottom 40% saw faster income growth, reducing inequality. But the pandemic and uneven recoveries now threaten to reverse this progress and worsen global inequality. Record numbers are fleeing conflicts and poverty, with one in 251 people worldwide being a refugee by mid-2022, the highest ever. Achieving SDG 10 means addressing wage disparities and resource access within and between countries. Challenges persist, like high poverty rates and declining worker earnings. Additionally, the global cost of sending remittances is a concern.</p>
-              </div>
-          </div>
-      </label>
-      <input type="radio" name="slide" id="sdg11" >
-      <label for="sdg11" class="card">
-          <div class="row">
-              <div class="icon">11</div>
-              <div class="description">
-                  <h4>Sustainable cities and Communities</h4>
-                  <p>The COVID-19 pandemic has shifted migration patterns, impacting cities and hindering progress towards sustainable urban areas. More people are living in slums, worsening housing issues, especially in developing countries. Public transportation is lacking for many urban residents, and waste management remains a concern, contributing to pollution. Achieving SDG 11 requires better urban planning, improved public transport, enhanced waste management, and increasing disaster risk reduction strategies in local governments.</p>
-              </div>
-          </div>
-      </label>
-      <input type="radio" name="slide" id="sdg12" >
-      <label for="sdg12" class="card">
-          <div class="row">
-              <div class="icon">12</div>
-              <div class="description">
-                  <h4>Responsible Consumption and Production</h4>
-                  <p>The world struggles to reduce food waste by 2030, worsened by COVID-19 disruptions. We need responsible consumption and production integrated into recovery efforts and to decouple growth from resource use. Corporate sustainability reporting has improved, but there's room to do more for the SDGs. Regional disparities exist in sustainable practices, and efforts to reduce food losses are stagnant. Rising fossil fuel subsidies challenge sustainability. Achieving SDG12 requires robust policies promoting sustainability.</p>
-              </div>
-          </div>
-      </label>
-   </div>
-
-
-
- 
-   <!--fourth row-->
-   <div class="container" id="con4">
-    <input type="radio" name="slide" id="sdg13">
-    <label for="sdg13" class="card">
-        <div class="row">
-            <div class="icon">13</div>
-            <div class="description">
-                <h4>Climate Action</h4>
-                <p>The world faces an urgent climate crisis, requiring transformative actions within this decade to reduce greenhouse gas emissions and meet the 1.5°C target. Without action, billions of lives are at risk from heatwaves, droughts, floods, and other disasters. Emissions must nearly halve by 2030 to effectively combat climate change. Despite some progress, global temperatures have already exceeded 1.1°C, and emissions continue to rise. Climate education is lacking in many national curriculum frameworks, highlighting the need for comprehensive action and education.</p>
-            </div>
+    <!-------------- Home Section -------------->
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            
         </div>
-    </label>
-    <input type="radio" name="slide" id="sdg14" >
-    <label for="sdg14" class="card">
-        <div class="row">
-            <div class="icon">14</div>
-            <div class="description">
-                <h4>Life Below Water</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum atque, odio laboriosam sequi obcaecati veritatis aperiam consectetur quos facere excepturi nesciunt animi totam provident quibusdam hic, ea explicabo temporibus.</p>
-            </div>
-        </div>
-    </label>
-    <input type="radio" name="slide" id="sdg15" >
-    <label for="sdg15" class="card">
-        <div class="row">
-            <div class="icon">15</div>
-            <div class="description">
-                <h4>Life on Land</h4>
-                <p>Help people all over the world</p>
-            </div>
-        </div>
-    </label>
-    <input type="radio" name="slide" id="sdg16" >
-    <label for="sdg16" class="card">
-        <div class="row">
-            <div class="icon">16</div>
-            <div class="description">
-                <h4>Peace, Justice and Strong Institutions</h4>
-                <p>Space engineering becomes
-                 more and more advanced</p>
-            </div>
-        </div>
-    </label>
-    <input type="radio" name="slide" id="sdg17" >
-    <label for="sdg17" class="card">
-        <div class="row">
-            <div class="icon">17</div>
-            <div class="description">
-                <h4>Partnerships for the Goals</h4>
-                <p>Space engineering becomes
-                 more and more advanced</p>
-            </div>
-        </div>
-    </label>
- </div>
-</div>
-
-
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
     </div>
-  </div>
+    <section id="home">
+        
+        <div class="text-holder">
+            <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">Embrace <span style="font-family: Acquire; font-size: 40px;">Sustainable</span></h3>
+            <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000"><span style="font-family: Acquire; font-size: 40px;">DEVELOPMENT</span> and Build a Better Future for All </h3>
+        </div>
 
-  <!-- QUOTATION ABOUT SDG-->
-  <div style="height: 300px;" id="about">
-    <h4><b>Purpose of SDG</b></h4>
-   
-  </div>
-
-  <!-- Contact section -->
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>INFO</h3>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
-      </div>
+        <div class="scroll-txt" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="2000" 
+        data-aos-anchor-placement="bottom-bottom">
+            <a href="#sdg-goals">What are the 17 SDG's?</a>
+            <a href="#gallery">Why are there 17 SDGs?</a>
+            
+        </div>
+    </section>
     
-      <div class="w3-third">
-        <h3>BLOG POSTS</h3>
-        <ul class="w3-ul">
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
-            <span>Sed mattis nunc</span>
-          </li>
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
-            <span>Praes tinci sed</span>
-          </li> 
-        </ul>
-      </div>
+        
+        <!-------------- sdg goals Section -------------->
+        <section id="sdg-goals">
+            <div class="heading-wrapper" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <div class="heading">
+                    <h2>17 SUSTAINABLE DEVELOPMENT GOALS</h2>
+                </div>
+                <div class="animate-bar"></div>
+                <div class="sub-heading">
+                    <p>What are the SDG 17?</p>
+                </div>
+            </div>
+    
+            <!-------------- slider -------------->
+            <div class="slider" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
+                <div class="item">
+                    <h1>SDG 1: No Poverty</h1>
+                    <h5> End poverty in all its forms everywhere</h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-01.jpg">
+                        <p> Global poverty is worsening due to the COVID-19 pandemic, reversing decades of progress. By 2030, an estimated 575 million people will still live in extreme poverty, especially in sub-Saharan Africa and conflict zones. Despite some expansion in social protection, over 4 billion lack adequate coverage. Historical trends indicate limited progress in halving national poverty rates by 2030, with insufficient social protection for vulnerable groups. Addressing poverty requires increased action and investment in job creation and social services, prioritizing essential services with redirected public resources.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 2: Zero Hunger</h1>
+                    <h5>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-02.jpg">
+                        <p>There is an escalating issue of hunger and food insecurity worldwide, with the number of affected individuals rising steadily since 2015, exacerbated by factors such as the COVID-19 pandemic, conflict, climate change, and inequality. Despite global efforts, projections suggest that by 2030, approximately 670 million people will still face hunger, equal to the number in 2015. Challenges persist in reducing malnutrition among children, necessitating a 2.2-fold increase in the current rate of reduction in stunting to meet global targets. Urgent action is required to transform food systems, enhance food security, and invest in sustainable agricultural practices to achieve zero hunger by 2030.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 3: Good Health and Well-Being</h1>
+                    <h5> Ensure healthy lives and promote well-being for all at all ages</h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-03.jpg">
+                        <p>It is noted that the challenges facing the achievement of Sustainable Development Goal 3 (SDG3), exacerbated by the pandemic and ongoing crises, lead to a rise in health inequalities and threatening universal health coverage. Notably, there's an alarming increase in the number of un- or under-vaccinated children, especially in low- and middle-income countries, alongside a slow decline in maternal mortality rates and under-5 mortality rates, with urgent efforts required to meet the 2030 targets. Progress towards ending communicable diseases remains off track, with setbacks observed in reducing HIV infections, TB, and malaria cases. Additionally, there's a need to bolster health systems and address the shortage of health workers, especially in regions with high disease burdens.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 4: Quality Education</h1>
+                    <h5> Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-04.jpg">
+                        <p>The existing challenges in achieving education targets, is worsened by the COVID-19 pandemic, which has further disrupted progress. Without additional measures, only a small fraction of countries will meet Sustainable Development Goal 4 (SDG4) by 2030, leaving millions of children without access to quality education and lacking essential numeracy and literacy skills. Despite some improvements in school completion rates, progress has slowed, and learning levels have stagnated, with documented losses due to pandemic-related school closures. Access to pre-primary education remains limited, and participation in education and training for youth and adults is insufficient.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 5: Gender Equality</h1>
+                    <h5>Achieve gender equality and empower all women and girls</h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-05.jpg">
+                        <p>The illustrated stark reality that the world is far from achieving gender equality by 2030, with none of the 18 indicators being on track to meet targets. Progress in closing gender gaps in various areas, such as legal protection, representation in leadership roles, and ending child marriage, remains slow, with estimations suggesting it could take centuries to achieve parity. The COVID-19 pandemic has exacerbated existing gender inequalities, particularly in healthcare, education, and economic opportunities. Comprehensive policy reforms and strong political leadership are deemed essential to dismantle systemic barriers to achieving Sustainable Development Goal 5 (SDG5) and advancing gender equality globally.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 6: Clean Water and Sanitation</h1>
+                    <h5> Ensure availability and sustainable management of water and sanitation for all</h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-06.jpg">
+                        <p>Despite some progress, billions of people still lack access to safe water, sanitation, and hygiene, with water scarcity worsening due to conflicts and climate change. Achieving universal coverage by 2030 requires substantial increases in current rates of progress, particularly for drinking water, sanitation, and hygiene. Challenges include water pollution, wastewater treatment, and water use efficiency, compounded by inadequate frameworks for sustainable water management and decreasing ODA disbursements to the water sector. Addressing these issues necessitates boosting infrastructure investment, enhancing cross-sectoral coordination, and prioritizing climate change adaptation efforts to achieve Sustainable Development Goal 6 (SDG6).
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 7: Affordable and Clean Energy</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-07.jpg">
+                        <p>Despite improvements in access to electricity and clean cooking fuels globally, significant challenges persist, with 675 million people still lacking electricity access and 2.3 billion relying on unsafe cooking fuels. The war in Ukraine and economic uncertainty contribute to energy price volatility, prompting mixed responses with some countries investing more in renewables while others increase reliance on coal, jeopardizing the green transition. If current trends persist, millions will remain without electricity access and clean cooking fuels by 2030. Accelerating electrification, ramping up investments in renewables, and enhancing electricity grid infrastructure are essential to achieve universal energy access and mitigate climate impacts. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 8: Decent Work and Economic Growth</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-08.jpg">
+                        <p>Progress toward achieving SDG8 faces significant challenges exacerbated by various crises including the aftermath of COVID-19, trade tensions, and the conflict in Ukraine. These factors are predicted to slow down global economic growth, jeopardizing advancements in equitable pay and decent work. While global real GDP per capita increased in 2021, forecasts indicate a slowdown in growth, particularly impacting LDCs. Informal employment remains a prevalent issue with around 2 billion workers lacking social protection, and productivity growth has been declining globally. The global unemployment rate has slightly decreased but remains a concern, especially among young people, with nearly one in four not in education, employment, or training. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 9: Industry, Innovation, and Infrastracture</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-09.jpg">
+                        <p>SDG 9 aims to bolster infrastructure, industry, and innovation, vital for economic growth and development. However, recovery from COVID-19 has been uneven, with disparities between high-income regions and least developed countries. Investment in advanced technologies, carbon emission reduction, and improving mobile broadband access are critical for achieving Goal 9 by 2030. Despite some recovery in manufacturing employment, challenges persist, including declining job shares and limited broadband access in certain regions. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 10: Reduced Inequality</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-10.jpg">
+                        <p>SDG 10, aimed at reducing inequality within and among countries, faces daunting challenges heightened by the COVID-19 pandemic. While pre-pandemic trends showed progress in narrowing income gaps, uneven recoveries across regions now threaten to exacerbate global inequality. Record numbers of people are displaced due to conflicts and economic hardship, underscoring the urgency to address wage disparities and improve resource access. Despite some strides, persistent hurdles like high remittance costs persist, requiring concerted efforts to sustain progress amid pandemic-induced disruptions.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 11: Sustainable Cities and Communities</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-11.jpg">
+                        <p>The COVID-19 pandemic has reshaped migration patterns, disproportionately affecting urban areas and impeding progress towards sustainable cities. The rise in slum dwellers exacerbates housing shortages, particularly in developing nations, while inadequate public transportation and unchecked urban expansion underscore urban planning challenges. Inefficient waste management adds to pollution and health hazards. Achieving SDG 11 necessitates bolstering urban planning, enhancing public transportation, managing waste effectively, and expanding open public spaces. Strengthening disaster risk reduction strategies at the local government level is also vital for urban resilience.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 12: Responsible Consumption and Production</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-12.jpg">
+                        <p>
+                            The world is falling short of its target to reduce per-capita food waste and losses by 2030, exacerbated by COVID-19 disruptions. Urgent integration of responsible consumption and production practices into pandemic recovery efforts is needed, alongside accelerating the decoupling of economic growth from resource use. Despite increased reporting on corporate sustainability, regional disparities persist, and post-harvest food losses remain stagnant. To achieve SDG12, robust policies promoting sustainable practices and reducing resource use are essential</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 13: Climate Action</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-13.jpg">
+                        <p>The world faces an urgent climate crisis, with current efforts falling short of averting catastrophic consequences. Immediate and transformative actions are imperative to slash greenhouse gas emissions by half by 2030 and limit global warming to 1.5°C. Failure to act jeopardizes billions of lives, exacerbating heatwaves, droughts, floods, wildfires, sea-level rise, and famines. Despite some progress in disaster risk reduction and climate finance, global temperatures have already surpassed 1.1°C above pre-industrial levels, demanding urgent comprehensive climate action and education to address this existential threat. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 14: Life Below Water</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-14.jpg">
+                        <p>The ocean, Earth's largest ecosystem, faces grave threats from acidification, eutrophication, declining fish stocks, and plastic pollution. While progress has been made in expanding marine protected areas and curbing illegal fishing, more concerted efforts are essential to achieve SDG14. Urgent global action is imperative to safeguard the ocean from further degradation. Events like the UN Ocean Conference 2025 aim to address these challenges and promote win-win solutions for climate and sustainable development. These efforts underscore the crucial need for a unified approach to protect the ocean and foster sustainable development.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 15: Life on Land</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-15.jpg">
+                        <p> The global community faces a triple crisis of climate change, pollution, and biodiversity loss, threatening both the planet's health and human well-being. Deforestation driven by agricultural expansion remains a pressing concern, and efforts to conserve key biodiversity areas face challenges. Land degradation imperils food and water security for 1.3 billion people, with rising species extinction rates. Achieving biodiversity targets requires concerted global action and transformative shifts in human-nature relationships to meet Goal 15 objectives.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 16: Peace, Justice and Strong Institutions</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-16.jpg">
+                        <p>SDG 16 aims to foster peace, justice, and strong institutions, but faces significant challenges amid ongoing global conflicts. With millions displaced and access to justice compromised, urgent action is needed to address escalating violence. Persistent gender disparities and violence against children underscore the need for comprehensive interventions. Despite progress, challenges like data gaps and youth underrepresentation remain.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>SDG 17: Partnerships for Goals</h1>
+                    <h5> Ensure access to affordable, reliable, sustainable and modern energy for all
+                    </h5>
+                    <div class="details-container">
+                        <img src="Images/Icons/E_SDG_PRINT-17.jpg">
+                        <p>While there has been progress in development aid, remittances, and access to technology, achieving SDG 17 (Partnerships for the Goals) faces challenges. Funding for development remains insufficient, especially for low-income countries, and international cooperation is hampered by geopolitical tensions and nationalism. Though internet access and trade have grown, significant gaps persist, particularly for developing countries. Despite increases in funding for data and statistics, long-term challenges hinder progress.</p>
+                    </div>
+                </div>
+                <button id="next">></button>
+                <button id="prev"><</button>
+            </div>
+    
+        </section>
+
+   
+            
+
+    <!-------------- Gallery Section -------------->
+    <section id="gallery">
+        <div class="heading-wrapper">
+            <div class="heading">
+                <h2></h2>
+            </div>
+            <div class="animate-bar"></div>
+            <div class="sub-heading">
+                <p>In 2019, United Nations created the 17 Sustainable Development Goals (SDGs) to provide a universal framework for addressing the world's most pressing challenges, ranging from poverty and hunger to climate change and inequality. These goals aim to mobilize global action and cooperation, setting clear targets and indicators to track progress towards sustainable development by 2030. By encompassing diverse aspects of social, economic, and environmental well-being, the SDGs recognize the interconnectedness of global issues and underscore the need for integrated approaches to achieve lasting impact.</p>
+            </div>
+        </div>
+        <div class="container">
+
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5 class="font-title">No Poverty</h5>
+                    <img src="./Images/1_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+
+            <!-- Gallery Card Start -->
+            <div class="gallery-card"  data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Zero Hunger</h5>
+                    <img src="./Images/2_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Good Health and Well-Being</h5>
+                    <img src="./Images/3_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Quality Education</h5>
+                    <img src="./Images/4_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Gender Equality</h5>
+                    <img src="./Images/5_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Clean Water and Sanitation</h5>
+                    <img src="./Images/6_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Affordable and Clean Energy</h5>
+                    <img src="./Images/7_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Decent Work and Economic Growth</h5>
+                    <img src="./Images/8_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Industry, Innovation and Infrastracture</h5>
+                    <img src="./Images/9_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Reduced Inequality</h5>
+                    <img src="./Images/10_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <div class="gallery-card" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Sustainable Cities and Communities</h5>
+                    <img src="./Images/11_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Responsible Consumption and Production</h5>
+                    <img src="./Images/12_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Climate Action</h5>
+                    <img src="./Images/13_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Life Below Water</h5>
+                    <img src="./Images/14_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <div class="gallery-card" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Life on Land</h5>
+                    <img src="./Images/15_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <!-- Gallery Card Start -->
+            <div class="gallery-card" data-aos="fade-bottom" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Peace, Justice and Strong Institutions</h5>
+                    <img src="./Images/16_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+            <div class="gallery-card" data-aos="fade-bottom" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="card-content">
+                    <h5>Partnerships for Goals</h5>
+                    <img src="./Images/17_SDG_MakeEveryDayCount_Gifs_GDU.gif" alt="brand" style="width: 100%;">
+                </div>
+            </div>
+            <!-- Gallery Card End -->
+        
+        </div>
+    </section>
 
 
-  </footer>
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-function showHiddenElement(index) {
-    document.getElementById('hidden-element-' + index).style.maxHeight = '100px';
-}
-
-function hideHiddenElement(index) {
-    document.getElementById('hidden-element-' + index).style.maxHeight = '0';
-}
-
-</script>
 
 
+
+
+
+    <!-------------- Give care Section -------------->
+    <section id="care">
+        <div class="heading-wrapper">
+            <div class="heading">
+                <h2>GIVE A CARE</h2>
+            </div>
+            <div class="animate-bar" style="margin: 50px;"></div>
+        </div>
+
+    </section>
+
+
+    <!-------------- Footer -------------->
+    <footer>
+        <p>CODE BLOODED &copy All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-------------- Jquery Scripts -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-------------- Owl Carousel Scripts -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-------------- AOS Scripts -------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-------------- Local Script -------------->
+    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
